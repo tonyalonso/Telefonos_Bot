@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
-
-TOKEN = "935f4d85-b211-48ef-adee-da96c161b36f"
+import os
+TOKEN = os.environ.get("935f4d85-b211-48ef-adee-da96c161b36f")
 
 # Diccionario de respuestas privadas según palabras clave
 RESPUESTAS = {
